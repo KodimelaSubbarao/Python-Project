@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Detector</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: #08e08a;">Leaf Disease Detector</h1>
+    <h4 style="text-align: center;">A web app to detect diseases in leaves using Deep Learning and computer vision</h4>
+
+    <h4>About:</h4>
+    <p style="text-align: justify;">Food security for billions of people on earth requires minimizing crop damage by timely detection of diseases. Developing methods for detection of plant diseases serves the dual purpose of increasing crop yield and reducing pesticide use without knowing about the proper disease. Along with the development of better crop varieties, disease detection is thus a paramount goal for achieving food security. The traditional method of disease detection has been to use manual examination by either farmers or experts, which can be time-consuming and costly, proving infeasible for millions of small and medium-sized farms around the world.</p>
+
+    <h4>Features:</h4>
+    <ul>
+        <li>Easy Detection of diseases in leaves: Just need to click and upload a leaf image.</li>
+        <li>Fast and Accurate: Provides the disease with high accuracy and fast.</li>
+        <li>Cause and Solution of diseases: Provides the cause and solution of the disease.</li>
+        <li>Large Plant Support: Supports 38 different classes.</li>
+    </ul>
+
+    <h4>List of Plant diseases we can predict</h4>
+    <ul>
+        <!-- Replace the content with actual list of plant diseases -->
+        <li>Apple___Apple_scab</li>
+        <li>Apple___Black_rot</li>
+        <!-- Add more items as needed -->
+    </ul>
+
+    <h1 style="text-align: center; color: #08e08a;">Disease Detector</h1>
+    <!-- File upload form -->
+    <form method="post" enctype="multipart/form-data" action="">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload Image">
+    </form>
+
+    <!-- Display uploaded image -->
+    <img src="uploaded_image.jpg" alt="Uploaded Image" style="width: 100%; max-width: 500px;">
+
+    <!-- Display predicted class and confidence -->
+    <p>Predicted Class: Tomato___Bacterial_spot</p>
+    <p>Confidence: 0.85</p>
+
+    <!-- Display information about disease and suggested pesticides -->
+    <p>Suggested Pesticides:</p>
+    <ul>
+        <li>BLUE COPPER</li>
+        <li>UTHANE M-45</li>
+        <!-- Add more items as needed -->
+    </ul>
+    <img src="pesticide_image.jpg" alt="Pesticide Image" style="width: 100%; max-width: 500px;">
+    <p>You can buy it from here: <a href="pesticide_link">Pesticide Link</a></p>
+</body>
+
+</html>
